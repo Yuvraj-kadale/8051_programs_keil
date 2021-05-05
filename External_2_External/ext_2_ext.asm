@@ -1,0 +1,28 @@
+// Add series of 10 numbers.
+// The series begins from location 2000H in the external RAM.
+// Store the result at locations 3000 and 3001H. 
+
+		ORG 0000H
+		MOV R7,#0AH 	//COUNTER
+		MOV DPTR,#2000H //SOURCE
+		MOV R2,#00H 	//TO STORE HIGHER BYTE
+		MOV R3,#00H		//TO STOREE LOWER BYTE
+		MOV R4,#00H  	//TO STORE EXT. NO 
+		CLR A			//FLUSH ACC.
+
+LOOP:	MOVX A,@DPTR
+		MOV R4,A
+		MOV A,R3
+		ADD A,R4
+		MOV R3,A
+		JNC SKIP
+		INC R2
+SKIP:	INC DPTR
+		DJNZ R7,LOOP
+		MOV DPTR,#3000H //DESTINATION FOR HIGHER BYTE
+		MOV A,R2
+		MOVX @DPTR,A
+		INC DPTR
+		MOV A,R3
+		MOVX @DPTR,A
+		END

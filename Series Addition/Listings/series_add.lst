@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  SERIES_ADD                                                           05/04/2021 00:41:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\series_add.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE series_add.asm SET(SMALL) DEBUG PRINT(.\Listings\series_add.lst) OBJECT
+                      (.\Objects\series_add.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000 7F0A              5                     MOV R7,#0AH              
+0002 7820              6                     MOV R0,#20H              
+0004 7A00              7                     MOV R2,#00H              
+0006 E4                8                     CLR A                    
+                       9                     
+0007 26               10     LOOP:   ADD A,@R0
+0008 5001             11                     JNC SKIP
+000A 0A               12                     INC R2
+000B 08               13     SKIP:   INC R0
+000C DFF9             14                     DJNZ R7,LOOP
+000E 8A30             15                     MOV 30H,R2
+0010 F531             16                     MOV 31H,A
+                      17                     END
+A51 MACRO ASSEMBLER  SERIES_ADD                                                           05/04/2021 00:41:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0007H   A   
+SKIP . . . . . . .  C ADDR   000BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,49 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/03/2021  19:50:05  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\transfer_to_ext_ram.obj TO .\Objects\transfer_ext PRINT (.\Listings\transfer_ext.m
+>> 51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\transfer_to_ext_ram.obj (TRANSFER_TO_EXT_RAM)
+
+
+LINK MAP OF MODULE:  .\Objects\transfer_ext (TRANSFER_TO_EXT_RAM)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000DH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\transfer_ext (TRANSFER_TO_EXT_RAM)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TRANSFER_TO_EXT_RAM
+  C:0007H         SYMBOL        LOOP
+  C:0000H         LINE#         3
+  C:0002H         LINE#         4
+  C:0004H         LINE#         5
+  C:0007H         LINE#         7
+  C:0008H         LINE#         8
+  C:0009H         LINE#         9
+  C:000AH         LINE#         10
+  C:000BH         LINE#         11
+  -------         ENDMOD        TRANSFER_TO_EXT_RAM
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000DH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=13
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

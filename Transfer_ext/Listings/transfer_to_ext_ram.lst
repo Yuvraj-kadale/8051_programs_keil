@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  TRANSFER_TO_EXT_RAM                                                  05/03/2021 19:50:02 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\transfer_to_ext_ram.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE transfer_to_ext_ram.asm SET(SMALL) DEBUG PRINT(.\Listings\transfer_to_e
+                      xt_ram.lst) OBJECT(.\Objects\transfer_to_ext_ram.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+0000 7A0A              3                     MOV R2,#0AH              
+0002 7820              4                     MOV R0,#20H      
+0004 902000            5                     MOV DPTR,#2000H  
+                       6             
+0007 E6                7     LOOP:   MOV A,@R0
+0008 F0                8                     MOVX @DPTR,A
+0009 08                9                     INC R0
+000A A3               10                     INC DPTR
+000B DAFA             11                     DJNZ R2,LOOP
+                      12                     END 
+A51 MACRO ASSEMBLER  TRANSFER_TO_EXT_RAM                                                  05/03/2021 19:50:02 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0007H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

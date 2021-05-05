@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  BCD_ADDITION                                                         05/03/2021 23:26:12 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\BCD_Addition.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE BCD_Addition.asm SET(SMALL) DEBUG PRINT(.\Listings\BCD_Addition.lst) OB
+                      JECT(.\Objects\BCD_Addition.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000                   5                     ORG 0000H
+0000 7F0A              6                     MOV R7,#0AH      
+0002 7820              7                     MOV R0,#20H              
+0004 7A00              8                     MOV R2,#00H      
+0006 E4                9                     CLR A                    
+                      10                     
+0007 36               11     LOOP:   ADDC A,@R0
+0008 D4               12                     DA  A                    
+                      13                     
+                      14                     
+0009 08               15     SKIP:   INC R0
+000A DFFB             16                     DJNZ R7,LOOP
+000C 8A30             17                     MOV 30H,R2               
+000E F531             18                     MOV 31H,A                
+                      19                     END
+A51 MACRO ASSEMBLER  BCD_ADDITION                                                         05/03/2021 23:26:12 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0007H   A   
+SKIP . . . . . . .  C ADDR   0009H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

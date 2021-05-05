@@ -1,0 +1,3 @@
+".\Objects\BCD_Addition.obj" 
+TO ".\Objects\BCD_Addition" 
+PRINT(".\Listings\BCD_Addition.m51")

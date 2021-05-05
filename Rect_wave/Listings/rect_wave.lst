@@ -1,0 +1,54 @@
+A51 MACRO ASSEMBLER  RECT_WAVE                                                            05/06/2021 01:39:14 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\rect_wave.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE rect_wave.asm SET(SMALL) DEBUG PRINT(.\Listings\rect_wave.lst) OBJECT(.
+                      \Objects\rect_wave.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000 759000            5                     MOV P1,#00H
+0003 758901            6                     MOV TMOD,#01H
+0006 758B06            7     UP:             MOV TL1,#06H
+0009 758DFF            8                     MOV TH1,#0FFH
+000C D292              9                     SETB P1.2
+000E 758840           10                     MOV TCON,#40H
+0011 308FFD           11     ON:             JNB TCON.7,ON
+0014 C292             12                     CLR P1.2
+0016 758800           13                     MOV TCON,#00H
+0019 758B12           14                     MOV TL1,#12H
+001C 85FD8D           15                     MOV TH1,0FDH
+001F 758840           16                     MOV TCON,#40H
+0022 308FFD           17     OFF:    JNB TCON.7, OFF
+0025 758800           18                     MOV TCON,#00H
+0028 80DC             19                     SJMP UP
+                      20                     END
+                                                     
+                                             
+A51 MACRO ASSEMBLER  RECT_WAVE                                                            05/06/2021 01:39:14 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+OFF. . . . . . . .  C ADDR   0022H   A   
+ON . . . . . . . .  C ADDR   0011H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TCON . . . . . . .  D ADDR   0088H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+UP . . . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,54 @@
+A51 MACRO ASSEMBLER  EXT_2_EXT                                                            05/04/2021 01:38:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ext_2_ext.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ext_2_ext.asm SET(SMALL) DEBUG PRINT(.\Listings\ext_2_ext.lst) OBJECT(.
+                      \Objects\ext_2_ext.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+0000                   5                     ORG 0000H
+0000 7F0A              6                     MOV R7,#0AH      
+0002 902000            7                     MOV DPTR,#2000H  
+0005 7A00              8                     MOV R2,#00H      
+0007 7B00              9                     MOV R3,#00H              
+0009 7C00             10                     MOV R4,#00H      
+000B E4               11                     CLR A                    
+                      12     
+000C E0               13     LOOP:   MOVX A,@DPTR
+000D FC               14                     MOV R4,A
+000E EB               15                     MOV A,R3
+000F 2C               16                     ADD A,R4
+0010 FB               17                     MOV R3,A
+0011 5001             18                     JNC SKIP
+0013 0A               19                     INC R2
+0014 A3               20     SKIP:   INC DPTR
+0015 DFF5             21                     DJNZ R7,LOOP
+0017 903000           22                     MOV DPTR,#3000H  
+001A EA               23                     MOV A,R2
+001B F0               24                     MOVX @DPTR,A
+001C A3               25                     INC DPTR
+001D EB               26                     MOV A,R3
+001E F0               27                     MOVX @DPTR,A
+                      28                     END
+A51 MACRO ASSEMBLER  EXT_2_EXT                                                            05/04/2021 01:38:00 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   000CH   A   
+SKIP . . . . . . .  C ADDR   0014H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

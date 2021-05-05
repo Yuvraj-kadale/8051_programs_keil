@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  BLOCK_TRASFER                                                        05/03/2021 19:42:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\block_trasfer.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE block_trasfer.asm SET(SMALL) DEBUG PRINT(.\Listings\block_trasfer.lst) 
+                      OBJECT(.\Objects\block_trasfer.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+0000 7A10              3                     MOV R2,#10H      
+0002 7920              4                     MOV R1,#20H      
+0004 7830              5                     MOV R0,#30H              
+                       6             
+0006 E7                7     LOOP:   MOV     A,@R1
+0007 F6                8                     MOV @R0,A
+0008 09                9                     INC     R1
+0009 08               10                     INC R0
+000A DAFA             11                     DJNZ R2,LOOP
+                      12                     END
+A51 MACRO ASSEMBLER  BLOCK_TRASFER                                                        05/03/2021 19:42:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

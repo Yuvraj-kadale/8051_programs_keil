@@ -1,0 +1,3 @@
+".\Objects\rect_wave.obj" 
+TO ".\Objects\Rect_wave" 
+PRINT(".\Listings\Rect_wave.m51")

@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  16_BIT_ADDITION                                                      05/02/2021 16:22:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\16 bit addition.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Add 2-16 bit\16 bit addition.asm SET(SMALL) DEBUG PRINT(.\Listings\16 b
+                      it addition.lst) OBJECT(.\Objects\16 bit addition.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+                       4     
+                       5     
+0000                   6     ORG 0000H
+0000 E550              7     MOV A,50H
+0002 2553              8     ADD A,53H
+0004 F556              9     MOV 56H,A
+0006 E551             10     MOV A,51H
+0008 2554             11     ADD A,54H
+000A F557             12     MOV 57H,A
+                      13     END
+A51 MACRO ASSEMBLER  16_BIT_ADDITION                                                      05/02/2021 16:22:00 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

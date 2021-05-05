@@ -1,0 +1,65 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/04/2021  01:38:01  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ext_2_ext.obj TO .\Objects\ext_2_ext PRINT (.\Listings\ext_2_ext.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\ext_2_ext.obj (EXT_2_EXT)
+
+
+LINK MAP OF MODULE:  .\Objects\ext_2_ext (EXT_2_EXT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     001FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\ext_2_ext (EXT_2_EXT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        EXT_2_EXT
+  C:000CH         SYMBOL        LOOP
+  C:0014H         SYMBOL        SKIP
+  C:0000H         LINE#         6
+  C:0002H         LINE#         7
+  C:0005H         LINE#         8
+  C:0007H         LINE#         9
+  C:0009H         LINE#         10
+  C:000BH         LINE#         11
+  C:000CH         LINE#         13
+  C:000DH         LINE#         14
+  C:000EH         LINE#         15
+  C:000FH         LINE#         16
+  C:0010H         LINE#         17
+  C:0011H         LINE#         18
+  C:0013H         LINE#         19
+  C:0014H         LINE#         20
+  C:0015H         LINE#         21
+  C:0017H         LINE#         22
+  C:001AH         LINE#         23
+  C:001BH         LINE#         24
+  C:001CH         LINE#         25
+  C:001DH         LINE#         26
+  C:001EH         LINE#         27
+  -------         ENDMOD        EXT_2_EXT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001FH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=31
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/04/2021  01:38:01  PAGE 2
+
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

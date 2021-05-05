@@ -1,0 +1,4 @@
+".\Objects\8 bit Addition.obj",
+".\Objects\8 bit subtraction.obj" 
+TO ".\Objects\8 bit Addition" 
+PRINT(".\Listings\8 bit Addition.m51")
